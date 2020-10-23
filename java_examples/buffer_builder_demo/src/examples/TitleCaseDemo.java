@@ -7,8 +7,9 @@ public class TitleCaseDemo {
 		StringBuilder sb=new StringBuilder();
 		String ar[]=s.split(" ");
 		for(String s1:ar) {
-			sb.append(Character.toUpperCase(s1.charAt(0))).append(s1.substring(1)).append(" ");
+			sb.append(s1.substring(0,s1.length()-1)).append(Character.toUpperCase(s1.charAt(s1.length()-1))).append(" ");
 		}
+	    
 		System.out.println(sb.toString().trim());
 	}
 

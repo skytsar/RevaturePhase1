@@ -17,8 +17,8 @@ public class MobileMain {
 		 * Object Casting(applicable only in inheritance & also only & only between parent & child)
 		 * Parent - larger
 		 * Child - smaller
-		 * Implicit - child class object to parent
-		 * Explicit - parent class object to child
+		 * Implicit - child class object to parent (remember: a child's controle over a parent is IMPLICIT ie crying)
+		 * Explicit - parent class object to child (a parent's control over a child is EXPLICIT)
 		 */
 		
 		System.out.println("\n\nCasting V1"); 

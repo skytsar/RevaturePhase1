@@ -7,6 +7,8 @@ public class PlayerMain {
 		Player p1=new Player(100, "Dinesh");
 		System.out.println("Printing p1");
 		p1.printPlayer();
+		int x = 4;
+		System.out.println(x++);
 		
 		
 		Team t=new Team(99999, "Rockers", "Duplisies");

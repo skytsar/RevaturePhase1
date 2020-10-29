@@ -19,11 +19,11 @@ public class NestedLoopsDemo {
 					c++;
 				}
 			}
-			if(c==2) {
+			if(c==2) {//because the prime numbers would only be divisable by themselves and the number 1
 				System.out.print(i+" ");
 			}
 		}
-
+			//code could be made more efficient, maybe not have N^2 rate but it's fine for now.
 	}
 
 }

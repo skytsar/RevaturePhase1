@@ -13,8 +13,9 @@ public class Demo1 {
 		}
 
 		// Enhanced for loop or for each loop
+		
 		System.out.println("Printing array contents using for each loop");
-		for (int x : ar) {
+		for (int x : ar) {//for each loop
 			System.out.println(x);
 		}
 	}

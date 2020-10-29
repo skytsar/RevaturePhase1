@@ -9,7 +9,7 @@ public class ArrayInput {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter number of elements for your array");
-		int n=sc.nextInt();
+		int n=sc.nextInt();//entering size
 		int ar[]=new int[n];
 		System.out.println("Enter "+n+" elements");
 		for (int i = 0; i < ar.length; i++) {

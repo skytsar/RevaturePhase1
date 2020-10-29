@@ -14,7 +14,7 @@ public class CRUDMain {
 
 		System.out.println("Printing array contents");
 		for (int i = 0; i < n; i++) {
-			System.out.print(ar[i] + " ");
+			System.out.print(ar[i] +" ");
 		}
 		int pos = 3;
 		int value = 99;

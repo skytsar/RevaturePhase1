@@ -22,7 +22,7 @@ public class LoopsDemo {
 		int x=0;
 		while(x!=10) {
 			System.out.println("x = "+(++x));
-		//	x++;
+		//	x++; done by previous line
 		}
 		
 		int m=1;

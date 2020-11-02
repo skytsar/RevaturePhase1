@@ -39,10 +39,13 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public int updatePlayerContact(int id, long newContact) throws BusinessException {
 		int c = 0;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = ""; //write update qury here
+			String sql = "update roc_revature.player set contact=? where id=? "; //write update qury here
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			//set your ?(placeholders) with the values
-
+			preparedStatement.setLong(1, newContact);
+			preparedStatement.setInt(2, id);
+			
+			
 			c = preparedStatement.executeUpdate();
 
 		} catch (ClassNotFoundException | SQLException e) {
@@ -56,10 +59,10 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public void deletePlayer(int id) throws BusinessException {
 	//	int c = 0;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = "";//write here the delete query
+			String sql = "DELETE FROM roc_revature.player where id = ?";//write here the delete query
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			//set parameter here
-			
+			preparedStatement.setInt(1, id);
 			 preparedStatement.executeUpdate();
 
 		} catch (ClassNotFoundException | SQLException e) {

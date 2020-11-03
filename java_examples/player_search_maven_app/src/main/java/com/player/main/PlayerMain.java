@@ -51,8 +51,19 @@ public class PlayerMain {
 					System.out.println(e.getMessage());
 				}
 				break;
-			case 2:	System.out.println("Thank you for your interest. This option is still under CONSTRUCTION");
-
+			case 2:	System.out.println("Please enter player name ");
+				String name=scanner.nextLine();
+				try {
+					List<Player> playersListName=playerSearchService.getPlayersByName(name);
+					if(playersListName!=null && playersListName.size()>0) {
+					System.out.println("We Found "+playersListName.size()+" no of player/s in the DB..with name "+name+" Details are");
+						for(Player p:playersListName) {
+							System.out.println(p);
+						}
+					}
+				} catch (BusinessException e1) {
+				System.out.println(e1.getMessage());
+				}
 			
 
 				break;

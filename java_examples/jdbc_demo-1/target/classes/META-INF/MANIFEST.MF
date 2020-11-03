@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: skyler
 Build-Jdk: 15
+=======
+Built-By: VinayIngalahalli
+Build-Jdk: 1.8.0_271
+>>>>>>> e1b863470a6f8c2d5bc291531122655de3e4d7f6
 Created-By: Maven Integration for Eclipse
 

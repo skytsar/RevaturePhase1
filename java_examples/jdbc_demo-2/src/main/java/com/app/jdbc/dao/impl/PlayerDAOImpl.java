@@ -16,8 +16,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public int createPlayer(Player player) throws BusinessException {
 		int c = 0;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = "INSERT INTO roc_revature.player(id, name, age, gender, teamname, contact) "
-					+ "VALUES(?,?,?,?,?,?)";
+			String sql = PlayerQueries.INSERTPLAYER;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, player.getId());
 			preparedStatement.setString(2, player.getName());
@@ -25,6 +24,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 			preparedStatement.setString(4, player.getGender());
 			preparedStatement.setString(5, player.getTeamName());
 			preparedStatement.setLong(6, player.getContact());
+			preparedStatement.setDate(7, new java.sql.Date(player.getDob().getTime()));
 
 			c = preparedStatement.executeUpdate();
 
@@ -77,13 +77,14 @@ public class PlayerDAOImpl implements PlayerDAO {
 	public Player getPlayerById(int id) throws BusinessException {
 		Player player = null;
 		try (Connection connection = PostresSqlConnection.getConnection()) {
-			String sql = "select  name, age, gender, teamname, contact from roc_revature.player where id=?";
+			String sql = PlayerQueries.GETPLAYERBYID;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setInt(1, id);
 			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
 				player = new Player(id, resultSet.getString("name"), resultSet.getString("teamName"),
 						resultSet.getInt("age"), resultSet.getLong("contact"), resultSet.getString("gender"));
+				player.setDob(resultSet.getDate("dob"));
 			}else {
 				throw new BusinessException("Invalid ID!!!... No matching records found for the ID = "+id);
 			}

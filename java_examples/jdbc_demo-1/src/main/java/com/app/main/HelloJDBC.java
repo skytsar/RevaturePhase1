@@ -18,7 +18,7 @@ public class HelloJDBC {
 			
 			
 			//Step 2 - Open Connection(url,username,password)
-			String url="jdbc:postgres://localhost:5432/postgres";			
+			String url="jdbc:postgresql://localhost:5432/postgres";			
 			String username="postgres";
 			String password="postgres";
 			connection=DriverManager.getConnection(url, username, password);

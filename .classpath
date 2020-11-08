@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="java_examples/abstract_class_demo/src"/>
+	<classpathentry kind="src" path="java_examples/access_specifiers_demo/src"/>
+	<classpathentry kind="src" path="java_examples/arrays_demo/src"/>
+	<classpathentry kind="src" path="java_examples/buffer_builder_demo/src"/>
+	<classpathentry kind="src" path="java_examples/constructors_demo/src"/>
+	<classpathentry kind="src" path="java_examples/control_structures_demos/src"/>
+	<classpathentry kind="src" path="java_examples/data_types_demo/src"/>
+	<classpathentry kind="src" path="java_examples/date_time_api/src"/>
+	<classpathentry kind="src" path="java_examples/exception_demo/src"/>
+	<classpathentry kind="src" path="java_examples/first_project_demo/src"/>
+	<classpathentry kind="src" path="java_examples/inheritance_demo/src"/>
+	<classpathentry kind="src" path="java_examples/interfaces_demo/src"/>
+	<classpathentry kind="src" path="java_examples/jdbc_demo-1/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/jdbc_demo-2/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/junit5_demo/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/junit5_demo/src/test/java"/>
+	<classpathentry kind="src" path="java_examples/lambda_functional_demo/src"/>
+	<classpathentry kind="src" path="java_examples/list_demo/src"/>
+	<classpathentry kind="src" path="java_examples/log4j_demo/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/maps_demo/src"/>
+	<classpathentry kind="src" path="java_examples/override_demo/src"/>
+	<classpathentry kind="src" path="java_examples/phs1_project/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/player_search_maven_app/src/main/java"/>
+	<classpathentry kind="src" path="java_examples/reading_inputs_demo/src"/>
+	<classpathentry kind="src" path="java_examples/set_demo/src"/>
+	<classpathentry kind="src" path="java_examples/stack_demo/src"/>
+	<classpathentry kind="src" path="java_examples/static_nonstatic_demo/src"/>
+	<classpathentry kind="src" path="java_examples/streams_api_demo/src"/>
+	<classpathentry kind="src" path="java_examples/string_demos/src"/>
+	<classpathentry kind="src" path="java_examples/thread_demo/src"/>
+	<classpathentry kind="src" path="java_examples/wrapper_demo/src"/>
+	<classpathentry kind="output" path="java_examples/abstract_class_demo/bin"/>
+</classpath>

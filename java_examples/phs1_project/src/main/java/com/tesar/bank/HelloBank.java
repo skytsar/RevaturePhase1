@@ -20,6 +20,9 @@ public class HelloBank {
 	public static void main(String[] args) {
 		Connection connection=null;
 		User user=null;
+		PreparedStatement preparedStatement=null;
+		ResultSet rs=null;
+		String sql=null;
 		String username;
 		String password;
 		String firstname;
@@ -54,12 +57,12 @@ public class HelloBank {
 					
 					//Step 3 - Create Statement
 					//Statement statement=connection.createStatement();
-					String sql=BankQueries.GETUSERLOGIN;
-					PreparedStatement preparedStatement = connection.prepareStatement(sql);
+					sql=BankQueries.GETUSERLOGIN;
+					preparedStatement = connection.prepareStatement(sql);
 					preparedStatement.setString(1, username);
 					preparedStatement.setString(2, password);
 					//Step 4 - Execute Query
-					ResultSet rs = preparedStatement.executeQuery();
+					rs = preparedStatement.executeQuery();
 					
 					
 					//ResultSet rs=statement.executeQuery(sql);
@@ -69,9 +72,9 @@ public class HelloBank {
 					if(rs.next()) {
 						user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),
 								rs.getString("lastname"),rs.getString("firstname"),rs.getString("position"));
-						while(rs.next()) {
-							System.out.print("Id = "+rs.getInt("id"));
-						}
+						//while(rs.next()) {
+							//System.out.print("Id = "+rs.getInt("id"));
+						//}
 						
 					}
 					else
@@ -86,8 +89,8 @@ public class HelloBank {
 						//Step 6 - Close Connection
 					connection.close();
 						System.out.println("Connection closed");
-						//if(user!=null)
-						//user.customerOptions(); unblock later
+						if(user!=null)
+						user.customerOptions();
 					} catch (SQLException e) {
 						System.out.println(e);
 					}
@@ -103,38 +106,55 @@ public class HelloBank {
 				firstname= scanner.nextLine();
 				System.out.println("Enter Last name");
 				lastname=scanner.nextLine();
-			try {
-				//Step 1 - Load/Register the Driver
-				//Step 2 - Open Connection(url,username,password)
-				connection=PostresSqlConnection.getConnection();
-				//System.out.println("Connection Successfull");
-				//Step 3 - Create Statement
-				//Statement statement=connection.createStatement();
-				String sql=BankQueries.GETUSERLOGIN;
-				PreparedStatement preparedStatement = connection.prepareStatement(sql);
-				preparedStatement.setString(1, username);
-				preparedStatement.setString(2, password);
-				//Step 4 - Execute Query
-				ResultSet rs = preparedStatement.executeQuery();
 				
+				
+			
+			
+					
+				
+			try {
+					connection=PostresSqlConnection.getConnection();
+				   // sql=BankQueries.CHECKIFUSERNAMEUSED;
+				    //preparedStatement = connection.prepareStatement(sql);
+				    //preparedStatement.setString(1, username);
+				    //rs = preparedStatement.executeQuery();
+			
+				
+					/*sql=BankQueries.GETMAXUSERID;
+					preparedStatement = connection.prepareStatement(sql);
+					rs = preparedStatement.executeQuery();
+					int newID =rs.getInt("max")+1;*/
+					
+					
+					sql=BankQueries.INSERTNEWUSER;
+					preparedStatement = connection.prepareStatement(sql);
+					//preparedStatement.setInt(1, default);
+					preparedStatement.setString(1, username);
+					preparedStatement.setString(2, password);
+					preparedStatement.setString(3, lastname);
+					preparedStatement.setString(4, firstname);
+					//preparedStatement.setString(6, "c");
+					preparedStatement.executeUpdate();
+					
+					sql=BankQueries.GETUSERLOGIN;
+					preparedStatement = connection.prepareStatement(sql);
+					preparedStatement.setString(1, username);
+					preparedStatement.setString(2, password);
+					rs= preparedStatement.executeQuery();
+					if(rs.next()) {
+					user = new User(rs.getInt("id"),username,password,
+							lastname,firstname,"c");
+					}
+					else {System.out.println("something failed");}
 				
 				//ResultSet rs=statement.executeQuery(sql);
 				//System.out.println("Query Executed");
 				
 				//Step 5 - Process Results
-				if(rs.next()) {
-					user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),
-							rs.getString("lastname"),rs.getString("firstname"),rs.getString("position"));
-					while(rs.next()) {
-						System.out.print("Id = "+rs.getInt("id"));
-					}
-					
-				}
-				else
-				System.out.println("Invalid username or password");
+				
 			} catch (ClassNotFoundException e) {
-				System.out.println(e);
-			} catch (SQLException e) {
+				System.out.println(e);} 
+			catch (SQLException e) {
 				System.out.println(e);
 			}
 			finally {
@@ -142,8 +162,8 @@ public class HelloBank {
 					//Step 6 - Close Connection
 				connection.close();
 					System.out.println("Connection closed");
-					//if(user!=null)
-					//user.customerOptions();
+					if(user!=null)
+					user.customerOptions();
 				} catch (SQLException e) {
 					System.out.println(e);
 				}

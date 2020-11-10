@@ -44,12 +44,16 @@ public class User {
 		System.out.println("Hello "+firstName);
 		System.out.println("(1) View pending accounts");
 		System.out.println("(2) view transactions");
-		System.out.println("(3) Log out");
+		System.out.println("(3) view all customers");
+		System.out.println("(4) Log out");
 		c = scanner.nextInt();
 		switch(c) {
 		case(1):
 			try {
 			List<Account> pendingList=bdbs.getPendingAccounts();
+			if(pendingList.isEmpty())
+				System.out.println("There are no pending account requests");
+			else {
 			int pendingChoice=-1;
 			do {
 			System.out.println("Account ID        Owner ID            Initial deposit");
@@ -85,6 +89,7 @@ public class User {
 				System.out.println("Number not in pending list");
 			}while(pendingChoice!=0);
 			}
+			}
 			catch(BusinessException e){
 				
 			}
@@ -99,12 +104,31 @@ public class User {
 			}
 			break;
 		case(3):
+			try {
+				bdbs.printCustomers();
+				System.out.println("Select account number");
+				int x=scanner.nextInt();
+				List<Account> accountList= bdbs.getAccountsWithID(x);
+				if(accountList.isEmpty())
+					System.out.println("This Customer has no accounts");
+				else {
+					System.out.println("Account ID        Balance");
+					for(Account a:accountList)
+					System.out.println(a.accountId+ "                       "+ a.ammount);
+				}
+				
+			}
+			catch(BusinessException e) {
+				
+			}
+			
+			
 			break;
 		default:
 			System.out.println("Invalid entry");
 			break;
 		}
-		}while(c!=3);
+		}while(c!=4);
 		
 	}
 	

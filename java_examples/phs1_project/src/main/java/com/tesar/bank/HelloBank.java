@@ -58,6 +58,7 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 					System.out.println(e);
 					
 				}
+				if(user!=null) {
 					log.trace("Account #"+user.id+" has logged in");
 						if(user.position=='c')
 							user.customerOptions();
@@ -65,6 +66,8 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 							user.employeeOptions();
 						else
 							System.out.println("Invalid position");
+				}
+				
 					
 				break;
 				

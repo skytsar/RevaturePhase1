@@ -21,5 +21,6 @@ public interface BankDAO {
 	public void insertTransaction(int sourceId,String type,double cash) throws BusinessException;
 	public void printTransactions()throws BusinessException;
 	public void printAccounts()throws BusinessException;
+	public void printCustomers()throws BusinessException;
 
 }

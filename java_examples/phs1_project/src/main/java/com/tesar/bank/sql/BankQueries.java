@@ -18,4 +18,5 @@ public class BankQueries {
 	public static final String INSERTPENDINGACCOUNT = "insert into project.pending_accounts (account_id,balance,owner_id) values(default,?,?)";
 	public static final String INSERTTRANSACTION="insert into project.transactions (id,source_account,transaction_type,target_account,ammount,time) values(default,?,?,?,?,current_timestamp)";
 	public static final String GETTRANSACTIONS= "select id,source_account,transaction_type,target_account,ammount,time from project.transactions";
+	
 }

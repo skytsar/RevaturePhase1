@@ -438,10 +438,10 @@ public class BankDAOimpl implements BankDAO {
 			
 			//Step 4 - Execute Query
 			ResultSet rs =preparedStatement.executeQuery();
-			System.out.println("Id     Source ID     Transaction type        Target Id         Ammount      Time");
+			System.out.println("Id   Source ID   Transaction type     Target Id     Ammount         Time");
 			while(rs.next()) {
 				System.out.println(rs.getInt("id")+"       "+rs.getInt("source_account")+"          "+
-			rs.getString("transaction_type")+"        "+rs.getInt("target_account")+"          "+
+			rs.getString("transaction_type")+"               "+rs.getInt("target_account")+"          "+
 						rs.getDouble("ammount")+"          "+rs.getTime("time"));
 				
 			}
@@ -478,7 +478,7 @@ public class BankDAOimpl implements BankDAO {
 			ResultSet rs =preparedStatement.executeQuery();
 			System.out.println("Account ID             Balance               Owner ID");
 			while(rs.next()) {
-				System.out.println(rs.getInt("account_id")+"       "+rs.getDouble("balance")+"          "+
+				System.out.println(rs.getInt("account_id")+"              "+rs.getDouble("balance")+"                 "+
 			rs.getString("owner_id"));
 				
 			}
@@ -499,6 +499,38 @@ public class BankDAOimpl implements BankDAO {
 			}
 		}
 		}
+@Override
+public void printCustomers()throws BusinessException{
+		Connection connection =null;
+		try {
+			connection=PostresSqlConnection.getConnection();
+			
+			String sql=BankQueries.GETPUBLICUSERS;
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			ResultSet rs =preparedStatement.executeQuery();
+			System.out.println("ID     username      Lastname        Firstname");
+			while(rs.next())
+			System.out.println(rs.getInt("id")+"      "+rs.getString("username")+"        "
+			+rs.getString("lastname")+"        "+rs.getString("firstname"));
+			
+		}
+		catch (ClassNotFoundException e) {
+			System.out.println(e);
+		} catch (SQLException e) {
+			System.out.println(e);
+		}
+		finally {
+			try {
+				//Step 6 - Close Connection
+			connection.close();
+				//System.out.println("Connection closed");
+			
+				
+			} catch (SQLException e) {
+				System.out.println(e);
+			}
+		}
+	}
 	
 
 }

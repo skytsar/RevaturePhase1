@@ -24,3 +24,14 @@
 [TRACE] com.tesar.bank.HelloBank: Account #3 has logged in    10-11-2020
 [TRACE] com.tesar.bank.HelloBank: Account #101 has logged in    10-11-2020
 [TRACE] com.tesar.bank.HelloBank: Account #102 has logged in    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    10-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    10-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    10-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    10-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    10-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    10-11-2020

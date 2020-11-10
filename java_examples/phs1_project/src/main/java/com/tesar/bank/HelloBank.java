@@ -59,13 +59,14 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 					
 				}
 				if(user!=null) {
-					log.trace("Account #"+user.id+" has logged in");
+					//log.trace("Account #"+user.id+" has logged in");
 						if(user.position=='c')
 							user.customerOptions();
 						else if(user.position=='e')
 							user.employeeOptions();
 						else
 							System.out.println("Invalid position");
+						log.trace("Logging out");
 				}
 				
 					
@@ -84,8 +85,8 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 				
 				bdbs.insertNewUser(username, password, firstname, lastname);
 				user =bdbs.login(username, password);
-				log.trace("New account created. Account #"+user.id);
-				log.trace("Account #"+user.id+" has logged in");
+				//log.trace("New account created. Account #"+user.id);
+				//log.trace("Account #"+user.id+" has logged in");
 				user.customerOptions();
 				}
 				catch(BusinessException e) {
@@ -103,7 +104,7 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 			
 			
 		} while (ch != 3);
-		
+		log.trace("Exiting program");
 
 	}
 

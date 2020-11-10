@@ -8,18 +8,23 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.tesar.bank.Account;
+import com.tesar.bank.HelloBank;
 import com.tesar.bank.User;
 import com.tesar.bank.DAO.BankDAO;
 import com.tesar.bank.sql.BankQueries;
 import com.tesar.bank.sql.PostresSqlConnection;
 import com.tesar.exception.BusinessException;
-
+import org.apache.log4j.Logger;
 
 
 
 public class BankDAOimpl implements BankDAO {
-	//private BankDAO bankDAO = new BankDAOimpl();
+	
+	private static Logger log=Logger.getLogger(BankDAOimpl.class);
+	
 	@Override
 	public User login(String username, String password)throws BusinessException{
 		Connection connection=null;
@@ -50,7 +55,7 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
-				
+			log.trace("User retreived");
 			connection.close();
 			} catch (SQLException e) {
 				System.out.println(e);
@@ -87,8 +92,9 @@ public class BankDAOimpl implements BankDAO {
 	}
 	finally {
 		try {
-			//Step 6 - Close Connection
+		log.trace("New user inserted");
 		connection.close();
+		
 			//System.out.println("Connection closed");
 		} catch (SQLException e) {
 			System.out.println(e);
@@ -123,6 +129,7 @@ public class BankDAOimpl implements BankDAO {
 		finally {
 			try {
 				//Step 6 - Close Connection
+			log.trace("Account retrieved");
 			connection.close();
 				//System.out.println("Connection closed");
 			//return account;
@@ -161,7 +168,8 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
-				//Step 6 - Close Connection
+				//Step 6 - Close Connection\
+				log.trace("Account updated");
 			connection.close();
 				//System.out.println("Connection closed");
 				
@@ -206,7 +214,7 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
-				//Step 6 - Close Connection
+				log.trace("New account inserted");
 			connection.close();
 				//System.out.println("Connection closed");
 			
@@ -244,6 +252,7 @@ public class BankDAOimpl implements BankDAO {
 		} catch (SQLException e) {
 			System.out.println(e);
 		}
+		log.trace("List of pending accounts retrieved");
 		return accountList;
 		
 	}
@@ -272,6 +281,7 @@ public class BankDAOimpl implements BankDAO {
 		} catch (SQLException e) {
 			System.out.println(e);
 		}
+		log.trace("List of Customer's accounts retrieved");
 		return accountList;
 		
 	}
@@ -295,6 +305,7 @@ public class BankDAOimpl implements BankDAO {
 		} catch (SQLException e) {
 			System.out.println(e);
 		}
+		log.trace("Pending account resolved");
 	}
 	
 	
@@ -334,6 +345,7 @@ public class BankDAOimpl implements BankDAO {
 		finally {
 			try {
 				//Step 6 - Close Connection
+			log.trace("New account requested");
 			connection.close();
 				//System.out.println("Connection closed");
 			
@@ -377,6 +389,7 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
+			log.trace("Insert transfer from account #"+sourceId+" to account #"+target);
 			connection.close();
 			} catch (SQLException e) {
 				System.out.println(e);
@@ -417,6 +430,7 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
+			log.trace("Account #"+sourceId+" requested a "+type);
 			connection.close();
 			} catch (SQLException e) {
 				System.out.println(e);
@@ -453,6 +467,7 @@ public class BankDAOimpl implements BankDAO {
 		finally {
 			try {
 				//Step 6 - Close Connection
+			log.trace("Transactions printed");
 			connection.close();
 				//System.out.println("Connection closed");
 			
@@ -489,7 +504,7 @@ public class BankDAOimpl implements BankDAO {
 		}
 		finally {
 			try {
-				//Step 6 - Close Connection
+			log.trace("Accounts printed");
 			connection.close();
 				//System.out.println("Connection closed");
 			
@@ -521,7 +536,7 @@ public void printCustomers()throws BusinessException{
 		}
 		finally {
 			try {
-				//Step 6 - Close Connection
+			log.trace("Customer list printed");
 			connection.close();
 				//System.out.println("Connection closed");
 			

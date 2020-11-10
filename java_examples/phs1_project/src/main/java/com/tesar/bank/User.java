@@ -124,6 +124,8 @@ public class User {
 			
 			
 			break;
+		case (4):
+			break;
 		default:
 			System.out.println("Invalid entry");
 			break;
@@ -249,7 +251,8 @@ public class User {
 				
 			}
 			break;
-		
+		case (3):
+			break;
 		default:
 			
 			System.out.println("Invalid entry");

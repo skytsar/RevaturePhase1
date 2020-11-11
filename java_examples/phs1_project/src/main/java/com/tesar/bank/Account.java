@@ -5,6 +5,9 @@ import java.sql.SQLException;
 
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import org.apache.log4j.Logger;
+
 import java.lang.System;
 import com.tesar.bank.DAO.*;
 import com.tesar.bank.DAOimpl.*;
@@ -15,6 +18,7 @@ public class Account {
 	public int accountId;
 	public double ammount;
 	public int ownerId;
+	private static Logger log=Logger.getLogger(Account.class);
 	
 	public double validMoney(double input) {
 		int temp = (int)(input*100.0);
@@ -87,7 +91,7 @@ public class Account {
 			bdbs.insertTransaction(this.accountId, type, ammount);
 		}
 		catch(BusinessException e) {
-			System.out.println(e);
+			log.trace(e);
 		
 		}
 		
@@ -98,7 +102,7 @@ public class Account {
 			bdbs.insertTransfer(this.accountId, targetID, ammount);
 		}
 		catch(BusinessException e) {
-			System.out.println(e);
+			log.trace(e);
 		
 		}
 	}
@@ -111,7 +115,7 @@ public class Account {
 			bdbs.updateAccount(this);
 		}
 		catch(BusinessException e) {
-			System.out.println(e);
+			log.trace(e);
 		
 		}
 		

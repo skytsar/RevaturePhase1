@@ -44,24 +44,24 @@ public class BankDAOimpl implements BankDAO {
 			if(rs.next()) {
 				user = new User(rs.getInt("id"),rs.getString("username"),rs.getString("password"),
 						rs.getString("lastname"),rs.getString("firstname"),rs.getString("position"));
-				
+				log.trace("User retreived");
 			}
 			else
-			System.out.println("Invalid username or password");
-			log.trace("User retreived");
+			log.trace("Invalid username or password");
+			
 		} catch (ClassNotFoundException e) {
 			log.error("ClassNotFound Error");
-			System.out.println(e);
+			//log.trace(e);
 		} catch (SQLException e) {
 			log.error("SQL Error");
-			System.out.println(e);
+			//log.trace(e);
 		}
 		finally {
 			try {
 			
 			connection.close();
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.error(e);
 			}
 		}
 		return user;
@@ -90,21 +90,21 @@ public class BankDAOimpl implements BankDAO {
 			
 			log.trace("New user inserted");
 	} catch (ClassNotFoundException e) {
-		System.out.println(e);} 
+		log.trace(e);} 
 	catch (SQLException e) {
 		log.error("Error: SQL");
 		throw new BusinessException("This username is already in use");
 		
-		//System.out.println(e);
+		//log.trace(e);
 	}
 	finally {
 		try {
 		
 		connection.close();
 		
-			//System.out.println("Connection closed");
+			//log.trace("Connection closed");
 		} catch (SQLException e) {
-			throw new BusinessException("");
+			log.trace(e);
 		}
 	}
 	}
@@ -116,7 +116,7 @@ public class BankDAOimpl implements BankDAO {
 		try {
 			
 			connection=PostresSqlConnection.getConnection();
-			//System.out.println("Connection Successfull");
+			//log.trace("Connection Successfull");
 			//Step 3 - Create Statement
 			//Statement statement=connection.createStatement();
 			String sql=BankQueries.GETACCOUNTWITHID;
@@ -127,22 +127,23 @@ public class BankDAOimpl implements BankDAO {
 			ResultSet rs=preparedStatement.executeQuery();
 			if(rs.next())
 			account =new Account(accountId,rs.getDouble("balance"),rs.getInt("owner_id"));
-			
+			else
+				throw new BusinessException("Account doesn't exist");
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 				//Step 6 - Close Connection
 			log.trace("Account retrieved");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			//return account;
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		
@@ -156,7 +157,7 @@ public class BankDAOimpl implements BankDAO {
 			//Step 1 - Load/Register the Driver
 			//Step 2 - Open Connection(url,username,password)
 			connection=PostresSqlConnection.getConnection();
-			//System.out.println("Connection Successfull");
+			//log.trace("Connection Successfull");
 			//Step 3 - Create Statement
 			//Statement statement=connection.createStatement();
 			String sql=BankQueries.UPDATEACCOUNT;
@@ -166,22 +167,22 @@ public class BankDAOimpl implements BankDAO {
 			//Step 4 - Execute Query
 			preparedStatement.executeUpdate();
 			//ResultSet rs=statement.executeQuery(sql);
-			//System.out.println("Query Executed");
+			//log.trace("Query Executed");
 			//Step 5 - Process Results
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 				//Step 6 - Close Connection\
 				log.trace("Account updated");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 	}
@@ -212,22 +213,22 @@ public class BankDAOimpl implements BankDAO {
 			
 			
 			//ResultSet rs=statement.executeQuery(sql);
-			//System.out.println("Query Executed");
+			//log.trace("Query Executed");
 			//Step 5 - Process Results
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 				log.trace("New account inserted");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -254,10 +255,10 @@ public class BankDAOimpl implements BankDAO {
 				throw new BusinessException("No Player Records Available");
 			}*/
 		} catch (ClassNotFoundException  e) {
-			System.out.println(e); // take off this line when in production
+			log.trace(e); // take off this line when in production
 			
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		log.trace("List of pending accounts retrieved");
 		return accountList;
@@ -283,10 +284,10 @@ public class BankDAOimpl implements BankDAO {
 				throw new BusinessException("No Player Records Available");
 			}*/
 		} catch (ClassNotFoundException  e) {
-			System.out.println(e); // take off this line when in production
+			log.trace(e); // take off this line when in production
 			
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		log.trace("List of Customer's accounts retrieved");
 		return accountList;
@@ -307,10 +308,10 @@ public class BankDAOimpl implements BankDAO {
 				throw new BusinessException("No Player Records Available");
 			}*/
 		} catch (ClassNotFoundException  e) {
-			System.out.println(e); // take off this line when in production
+			log.trace(e); // take off this line when in production
 			
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		log.trace("Pending account resolved");
 	}
@@ -342,23 +343,23 @@ public class BankDAOimpl implements BankDAO {
 			
 			
 			//ResultSet rs=statement.executeQuery(sql);
-			//System.out.println("Query Executed");
+			//log.trace("Query Executed");
 			//Step 5 - Process Results
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 				//Step 6 - Close Connection
 			log.trace("New account requested");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -387,19 +388,19 @@ public class BankDAOimpl implements BankDAO {
 			//Step 4 - Execute Query
 			preparedStatement.executeUpdate();
 			//ResultSet rs=statement.executeQuery(sql);
-			//System.out.println("Query Executed");
+			//log.trace("Query Executed");
 			//Step 5 - Process Results
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 			log.trace("Insert transfer from account #"+sourceId+" to account #"+target);
 			connection.close();
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -428,19 +429,19 @@ public class BankDAOimpl implements BankDAO {
 			//Step 4 - Execute Query
 			preparedStatement.executeUpdate();
 			//ResultSet rs=statement.executeQuery(sql);
-			//System.out.println("Query Executed");
+			//log.trace("Query Executed");
 			//Step 5 - Process Results
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 			log.trace("Account #"+sourceId+" requested a "+type);
 			connection.close();
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -459,28 +460,28 @@ public class BankDAOimpl implements BankDAO {
 			
 			//Step 4 - Execute Query
 			ResultSet rs =preparedStatement.executeQuery();
-			System.out.println("Id   Source ID   Transaction type     Target Id     Ammount         Time");
+			log.trace("Id   Source ID   Transaction type     Target Id     Ammount         Time");
 			while(rs.next()) {
-				System.out.println(rs.getInt("id")+"       "+rs.getInt("source_account")+"          "+
+				log.trace(rs.getInt("id")+"       "+rs.getInt("source_account")+"          "+
 			rs.getString("transaction_type")+"               "+rs.getInt("target_account")+"          "+
 						rs.getDouble("ammount")+"          "+rs.getTime("time"));
 				
 			}
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 				//Step 6 - Close Connection
 			log.trace("Transactions printed");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -498,26 +499,26 @@ public class BankDAOimpl implements BankDAO {
 			
 			//Step 4 - Execute Query
 			ResultSet rs =preparedStatement.executeQuery();
-			System.out.println("Account ID             Balance               Owner ID");
+			log.trace("Account ID             Balance               Owner ID");
 			while(rs.next()) {
-				System.out.println(rs.getInt("account_id")+"              "+rs.getDouble("balance")+"                 "+
+				log.trace(rs.getInt("account_id")+"              "+rs.getDouble("balance")+"                 "+
 			rs.getString("owner_id"));
 				
 			}
 		} catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 			log.trace("Accounts printed");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 		}
@@ -530,26 +531,26 @@ public void printCustomers()throws BusinessException{
 			String sql=BankQueries.GETPUBLICUSERS;
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			ResultSet rs =preparedStatement.executeQuery();
-			System.out.println("ID     username      Lastname        Firstname");
+			log.trace("ID     username      Lastname        Firstname");
 			while(rs.next())
-			System.out.println(rs.getInt("id")+"      "+rs.getString("username")+"        "
+			log.trace(rs.getInt("id")+"      "+rs.getString("username")+"        "
 			+rs.getString("lastname")+"        "+rs.getString("firstname"));
 			
 		}
 		catch (ClassNotFoundException e) {
-			System.out.println(e);
+			log.trace(e);
 		} catch (SQLException e) {
-			System.out.println(e);
+			log.trace(e);
 		}
 		finally {
 			try {
 			log.trace("Customer list printed");
 			connection.close();
-				//System.out.println("Connection closed");
+				//log.trace("Connection closed");
 			
 				
 			} catch (SQLException e) {
-				System.out.println(e);
+				log.trace(e);
 			}
 		}
 	}

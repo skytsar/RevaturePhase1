@@ -34,12 +34,12 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 		BankDAO bdbs=new BankDAOimpl();
 		User user=null;
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Welcome to Tesar's Bank app");
-		System.out.println("--------------------------------------------------");
+		log.trace("Welcome to Tesar's Bank app");
+		log.trace("--------------------------------------------------");
 		
 		int ch = 0;
 		do {
-			System.out.println("Enter 1 in order to log in, 2 to make a new account enter 3 to exit");
+			log.trace("Enter 1 in order to log in, 2 to make a new account enter 3 to exit");
 			try {
 				ch = Integer.parseInt(scanner.nextLine());
 			} catch (NumberFormatException e) {
@@ -47,15 +47,15 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 			}
 			switch(ch){
 			case(1):
-				System.out.println("Enter Username");
+				log.trace("Enter Username");
 				username = scanner.nextLine();
-				System.out.println("Enter password");
+				log.trace("Enter password");
 				password= scanner.nextLine();
 				try {
 					user =bdbs.login(username,password);
 				}
 				catch(BusinessException e) {
-					System.out.println(e);
+					log.error(e);
 					
 				}
 				if(user!=null) {
@@ -65,7 +65,7 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 						else if(user.position=='e')
 							user.employeeOptions();
 						else
-							System.out.println("Invalid position");
+							log.trace("Invalid position");
 						log.trace("Logging out");
 				}
 				
@@ -73,13 +73,13 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 				break;
 				
 			case(2):
-				System.out.println("Enter Username");
+				log.trace("Enter Username");
 				username = scanner.nextLine();
-				System.out.println("Enter password");
+				log.trace("Enter password");
 				password= scanner.nextLine();
-				System.out.println("Enter first name");
+				log.trace("Enter first name");
 				firstname= scanner.nextLine();
-				System.out.println("Enter Last name");
+				log.trace("Enter Last name");
 				lastname=scanner.nextLine();
 				try {
 				
@@ -90,7 +90,7 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 				user.customerOptions();
 				}
 				catch(BusinessException e) {
-					System.out.println(e);
+					log.error(e);
 					
 				}
 				catch(NullPointerException e) {
@@ -100,7 +100,7 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 			case 3:
 				break;
 			
-			default: System.out.println("Invalid");
+			default: log.warn("Invalid");
 				break;
 			
 			}

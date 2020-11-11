@@ -178,3 +178,754 @@
 [TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
 [TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
 [TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[WARN] com.tesar.bank.User: Invalid entry    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: There are no pending account requests    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Id   Source ID   Transaction type     Target Id     Ammount         Time    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1       2          withdrawl               0          60.0          12:54:39    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2       2          deposit               0          500.0          12:55:10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3       2          withdrawl               0          0.0          12:55:19    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4       2          transfer               3          200.0          13:19:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5       2          withdrawl               0          50.0          13:02:04    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6       2          deposit               0          48.0          13:09:03    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select account number    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[WARN] com.tesar.bank.User: Invalid entry    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[WARN] com.tesar.bank.User: Invalid entry    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: There are no pending account requests    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Id   Source ID   Transaction type     Target Id     Ammount         Time    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1       2          withdrawl               0          60.0          12:54:39    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2       2          deposit               0          500.0          12:55:10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3       2          withdrawl               0          0.0          12:55:19    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4       2          transfer               3          200.0          13:19:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5       2          withdrawl               0          50.0          13:02:04    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6       2          deposit               0          48.0          13:09:03    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select account number    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: There are no pending account requests    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select account number    11-11-2020
+[WARN] com.tesar.bank.User: Invalid entry    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select account number    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 4                       7733.0    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Invalid username or password    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Barry    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: You have no accounts.    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Barry    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account requested    11-11-2020
+[TRACE] com.tesar.bank.User: Awaiting approval by employee    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Barry    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account requested    11-11-2020
+[TRACE] com.tesar.bank.User: Awaiting approval by employee    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Barry    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account requested    11-11-2020
+[TRACE] com.tesar.bank.User: Awaiting approval by employee    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Barry    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Martin    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 4                       7733.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: com.tesar.exception.BusinessException: This is not your account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Martin    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account requested    11-11-2020
+[TRACE] com.tesar.bank.User: Awaiting approval by employee    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Martin    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.User: What is your initial deposit?    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account requested    11-11-2020
+[TRACE] com.tesar.bank.User: Awaiting approval by employee    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Martin    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 4                   2                   7400.0    11-11-2020
+[TRACE] com.tesar.bank.User: 5                   2                   987.0    11-11-2020
+[TRACE] com.tesar.bank.User: 6                   2                   3.0    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Number not in pending list    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 4                   2                   7400.0    11-11-2020
+[TRACE] com.tesar.bank.User: 5                   2                   987.0    11-11-2020
+[TRACE] com.tesar.bank.User: 6                   2                   3.0    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Pending account resolved    11-11-2020
+[TRACE] com.tesar.bank.User: Account rejected    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 4                   2                   7400.0    11-11-2020
+[TRACE] com.tesar.bank.User: 5                   2                   987.0    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Pending account resolved    11-11-2020
+[TRACE] com.tesar.bank.User: Account rejected    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 4                   2                   7400.0    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Pending account resolved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account inserted    11-11-2020
+[TRACE] com.tesar.bank.User: Account accepted    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.User: Entry must be either 'y' or 'n'    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 7                   3                   6449.0    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Pending account resolved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New account inserted    11-11-2020
+[TRACE] com.tesar.bank.User: Account accepted    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Owner ID            Initial deposit    11-11-2020
+[TRACE] com.tesar.bank.User: 8                   3                   6834.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account ID (or enter 0 to cancel)    11-11-2020
+[TRACE] com.tesar.bank.User: Do you wish do accept this account? y/n    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Pending account resolved    11-11-2020
+[TRACE] com.tesar.bank.User: Account rejected    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: There are no pending account requests    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alex    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View pending accounts    11-11-2020
+[TRACE] com.tesar.bank.User: (2) view transactions    11-11-2020
+[TRACE] com.tesar.bank.User: (3) view all customers    11-11-2020
+[TRACE] com.tesar.bank.User: (4) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       7505.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Enter the ammount you want to deposit    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account #2 requested a deposit    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       15505.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Enter the ammount you want to withdraw    11-11-2020
+[WARN] com.tesar.bank.User: Invalid request    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       15505.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Enter the ammount you want to withdraw    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account #2 requested a withdrawl    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              1200.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9525.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Insert transfer from account #2 to account #2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[ERROR] com.tesar.bank.User: java.lang.NumberFormatException: For input string: ""    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       10025.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              1200.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              10025.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Insert transfer from account #2 to account #3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[ERROR] com.tesar.bank.User: java.lang.NumberFormatException: For input string: ""    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       9025.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9025.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2200.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Insert transfer from account #2 to account #3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              8525.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Insert transfer from account #2 to account #2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       9125.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Welcome to Tesar's Bank app    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: --------------------------------------------------    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter Username    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter password    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       9125.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9125.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.User: com.tesar.exception.BusinessException: You cannot transfer to the same account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: Account ID        Balance    11-11-2020
+[TRACE] com.tesar.bank.User: 2                       9125.0    11-11-2020
+[TRACE] com.tesar.bank.User: Enter intended account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              500.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9125.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.User: Select ID of account you want to send to    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.User: How much would you like to give    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Insert transfer from account #2 to account #1    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Enter the ammount you want to deposit    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account #2 requested a deposit    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.User: (0) Return    11-11-2020
+[TRACE] com.tesar.bank.User: (1) Withdraw    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Deposit    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Transfer to another account    11-11-2020
+[TRACE] com.tesar.bank.User: Hello Alen    11-11-2020
+[TRACE] com.tesar.bank.User: (1) View accounts you own    11-11-2020
+[TRACE] com.tesar.bank.User: (2) Create account    11-11-2020
+[TRACE] com.tesar.bank.User: (3) Log out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Enter 1 in order to log in, 2 to make a new account enter 3 to exit    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              600.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9125.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Id   Source ID   Transaction type     Target Id     Ammount         Time    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1       2          withdrawl               0          60.0          12:54:39    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2       2          deposit               0          500.0          12:55:10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3       2          withdrawl               0          0.0          12:55:19    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4       2          transfer               3          200.0          13:19:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5       2          withdrawl               0          50.0          13:02:04    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6       2          deposit               0          48.0          13:09:03    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7       2          deposit               0          8000.0          16:44:26    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8       2          withdrawl               0          5980.0          16:45:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9       2          transfer               2          500.0          16:46:00    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10       2          transfer               3          1000.0          16:46:20    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 11       2          transfer               3          500.0          16:48:18    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 12       2          transfer               2          600.0          16:48:52    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 13       2          transfer               1          100.0          16:53:59    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 14       2          deposit               0          100.0          16:54:14    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              600.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9125.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Id   Source ID   Transaction type     Target Id     Ammount         Time    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1       2          withdrawl               0          60.0          12:54:39    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2       2          deposit               0          500.0          12:55:10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3       2          withdrawl               0          0.0          12:55:19    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4       2          transfer               3          200.0          13:19:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5       2          withdrawl               0          50.0          13:02:04    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6       2          deposit               0          48.0          13:09:03    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7       2          deposit               0          8000.0          16:44:26    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8       2          withdrawl               0          5980.0          16:45:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9       2          transfer               2          500.0          16:46:00    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10       2          transfer               3          1000.0          16:46:20    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 11       2          transfer               3          500.0          16:48:18    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 12       2          transfer               2          600.0          16:48:52    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 13       2          transfer               1          100.0          16:53:59    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 14       2          deposit               0          100.0          16:54:14    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account ID             Balance               Owner ID    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4              7733.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5              7400.0                 2    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6              6449.0                 3    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3              2700.0                 10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1              600.0                 9    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2              9125.0                 102    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: ID     username      Lastname        Firstname    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 102      a        Marcus        Alen    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1      ab        Chance        James    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2      ba        Allen        Barry    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3      bc        Waller        Martin    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4      be        Olson        Ben    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5      e        Karloff        Boris    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6      uv        Jobs        Steve    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7      mic        Judge        Mike    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8      nn        Barry        Ned    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9      wer        Smith        Bob    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10      tr        Miles        George    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Id   Source ID   Transaction type     Target Id     Ammount         Time    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 1       2          withdrawl               0          60.0          12:54:39    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 2       2          deposit               0          500.0          12:55:10    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 3       2          withdrawl               0          0.0          12:55:19    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 4       2          transfer               3          200.0          13:19:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 5       2          withdrawl               0          50.0          13:02:04    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 6       2          deposit               0          48.0          13:09:03    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 7       2          deposit               0          8000.0          16:44:26    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 8       2          withdrawl               0          5980.0          16:45:40    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 9       2          transfer               2          500.0          16:46:00    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 10       2          transfer               3          1000.0          16:46:20    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 11       2          transfer               3          500.0          16:48:18    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 12       2          transfer               2          600.0          16:48:52    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 13       2          transfer               1          100.0          16:53:59    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: 14       2          deposit               0          100.0          16:54:14    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020

@@ -12,6 +12,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import org.apache.log4j.Logger;
+
 import com.tesar.exception.BusinessException;
 import java.util.InputMismatchException;
 
@@ -23,7 +26,7 @@ public class User {
 	public String firstName;
 	public String lastName;
 	public char position;
-	
+	private static Logger log=Logger.getLogger(User.class);
 	
 	public User(int id, String uname, String pword, String lname,String fname,String position) {
 		super();
@@ -42,11 +45,11 @@ public class User {
 		int c = 0;
 		BankDAO bdbs=new BankDAOimpl();
 		do {
-		System.out.println("Hello "+firstName);
-		System.out.println("(1) View pending accounts");
-		System.out.println("(2) view transactions");
-		System.out.println("(3) view all customers");
-		System.out.println("(4) Log out");
+		log.trace("Hello "+firstName);
+		log.trace("(1) View pending accounts");
+		log.trace("(2) view transactions");
+		log.trace("(3) view all customers");
+		log.trace("(4) Log out");
 		try {
 			c = Integer.parseInt(scanner.nextLine());
 		} catch (NumberFormatException e) {
@@ -58,75 +61,80 @@ public class User {
 			try {
 			List<Account> pendingList=bdbs.getPendingAccounts();
 			if(pendingList.isEmpty())
-				System.out.println("There are no pending account requests");
+				log.trace("There are no pending account requests");
 			else {
 			int pendingChoice=-1;
 			do {
-			System.out.println("Account ID        Owner ID            Initial deposit");
+				log.trace("Account ID        Owner ID            Initial deposit");
 			for(Account a:pendingList)
-			System.out.println(a.accountId+ "                   "+a.ownerId+ "                   "+ a.ammount);
-			System.out.println("Enter intended account ID (or enter 0 to cancel)");
+				log.trace(a.accountId+ "                   "+a.ownerId+ "                   "+ a.ammount);
+			log.trace("Enter intended account ID (or enter 0 to cancel)");
 			int occuranceCount=0;
 			
-			pendingChoice=scanner.nextInt();
+			pendingChoice=Integer.parseInt(scanner.nextLine());
 			for(Account a:pendingList) {
 				if(a.getAccountId()==pendingChoice) {
 					occuranceCount++;
-					System.out.println("Do you wish do accept this account? y/n");
+					log.trace("Do you wish do accept this account? y/n");
 					String yesno =scanner.next();
 					switch(yesno) {
 					case("y"):
 						bdbs.deletePendingAccount(a.getAccountId());
 						bdbs.insertAccount(a.getAmmount(), a.getOwnerId());
-						System.out.println("Account accepted");
+						log.trace("Account accepted");
 						pendingChoice=0;
 						break;
 					case("n"):
 						bdbs.deletePendingAccount(a.getAccountId());
-						System.out.println("Account rejected");
+						log.trace("Account rejected");
 						pendingChoice=0;
 						break;
 					default:
-						System.out.println("Entry must be either 'y' or 'n'");
+						log.trace("Entry must be either 'y' or 'n'");
 						break;
 					}
 				}
 			}
 				if (occuranceCount==0)
-				System.out.println("Number not in pending list");
+					log.trace("Number not in pending list");
 			}while(pendingChoice!=0);
 			}
 			}
 			catch(BusinessException e){
 				
 			}
+			catch(NumberFormatException e) {
 			
+			}
 			break;
 		case(2):
 			try {
 				bdbs.printTransactions();
 			}
 			catch(BusinessException e) {
-				
+				log.warn("Invalid entry");
 			}
 			break;
 		case(3):
 			try {
 				bdbs.printCustomers();
-				System.out.println("Select account number");
-				int x=scanner.nextInt();
+				log.trace("Select account number");
+				int x=Integer.parseInt(scanner.nextLine());
 				List<Account> accountList= bdbs.getAccountsWithID(x);
 				if(accountList.isEmpty())
-					System.out.println("This Customer has no accounts");
+					log.warn("This Customer has no accounts");
 				else {
-					System.out.println("Account ID        Balance");
+					log.trace("Account ID        Balance");
 					for(Account a:accountList)
-					System.out.println(a.accountId+ "                       "+ a.ammount);
+						log.trace(a.accountId+ "                       "+ a.ammount);
 				}
 				
 			}
 			catch(BusinessException e) {
-				
+				log.warn(e);
+			}
+			catch(NumberFormatException e) {
+			 log.warn("Invalid entry");
 			}
 			
 			
@@ -134,7 +142,7 @@ public class User {
 		case (4):
 			break;
 		default:
-			System.out.println("Invalid entry");
+			log.warn("Invalid entry");
 			break;
 		}
 		}while(c!=4);
@@ -146,10 +154,10 @@ public class User {
 		BankDAO bdbs=new BankDAOimpl();
 		int c = 0;
 		do {
-		System.out.println("Hello "+firstName);
-		System.out.println("(1) View accounts you own");
-		System.out.println("(2) Create account");
-		System.out.println("(3) Log out");
+			log.trace("Hello "+firstName);
+			log.trace("(1) View accounts you own");
+			log.trace("(2) Create account");
+			log.trace("(3) Log out");
 		
 			// = scanner.nextInt();
 		
@@ -168,19 +176,19 @@ public class User {
 			
 			Account account =null;
 			if(accountList.isEmpty()) {
-				System.out.println("You have no accounts.");
+				log.trace("You have no accounts.");
 			}
 			else {
-				System.out.println("Account ID        Balance");
+				log.trace("Account ID        Balance");
 				for(Account a:accountList)
-				System.out.println(a.accountId+ "                       "+ a.ammount);
-				System.out.println("Enter intended account");
+					log.trace(a.accountId+ "                       "+ a.ammount);
+				log.trace("Enter intended account");
 				//try {
 				
 					//try {
 					
 					try {
-						//System.out.println("In try block");
+						//log.trace("In try block");
 						 int accountChoice= Integer.parseInt(scanner.nextLine());
 						 account=bdbs.getAccountwithID(accountChoice);
 						 if(account.ownerId!=this.id) {
@@ -188,7 +196,7 @@ public class User {
 						 }
 						 
 					//} catch (NumberFormatException e) {
-						//System.out.println(e);
+						//log.trace(e);
 					//}
 					
 					
@@ -201,39 +209,39 @@ public class User {
 				
 					int actionChoice=5;
 					do {
-					System.out.println("(0) Return");
-					System.out.println("(1) Withdraw");
-					System.out.println("(2) Deposit");
-					System.out.println("(3) Transfer to another account");
+						log.trace("(0) Return");
+						log.trace("(1) Withdraw");
+						log.trace("(2) Deposit");
+						log.trace("(3) Transfer to another account");
 					
 					//try {
-						//System.out.println("In try block");
+						//log.trace("In try block");
 						 actionChoice= Integer.parseInt(scanner.nextLine());
 						 
 					//} catch (NumberFormatException e) {
-						//System.out.println(e);
+						//log.trace(e);
 					//}/
 					double entry=0.0;
 					int accountEntry;
 					
 					switch(actionChoice) {
 					case 1:
-						System.out.println("Enter the ammount you want to withdraw");
+						log.trace("Enter the ammount you want to withdraw");
 						entry=Double.parseDouble(scanner.nextLine());
 						//entry =scanner.nextDouble();
 						if(account.getAmmount()<entry || entry<0.0)
-							System.out.println("Invalid request");
+							log.warn("Invalid request");
 						else {
 							account.withdrawl(entry);
 						}
 						break;
 					case 2:
-						System.out.println("Enter the ammount you want to deposit");
+						log.trace("Enter the ammount you want to deposit");
 						entry=Double.parseDouble(scanner.nextLine());
 						//entry =scanner.nextDouble();
 						
 						if(entry<0.0)
-							System.out.println("Invalid request");
+							log.warn("Invalid request");
 						else {
 							account.deposit(entry);
 						}
@@ -241,11 +249,13 @@ public class User {
 						break;
 					case 3:
 						bdbs.printAccounts();
-						System.out.println("Select ID of account you want to send to");
-						accountEntry=scanner.nextInt();
+						log.trace("Select ID of account you want to send to");
+						accountEntry=Integer.parseInt(scanner.nextLine());
 						Account targetAccount=bdbs.getAccountwithID(accountEntry);
-						System.out.println("How much would you like to give");
-						entry =scanner.nextDouble();
+						log.trace("How much would you like to give");
+						if(account.accountId==targetAccount.accountId)
+							throw new BusinessException("You cannot transfer to the same account");
+						entry =Double.parseDouble(scanner.nextLine());
 						if(entry>account.ammount)
 							throw new BusinessException("Cannot transfer more than ammount in balance");
 						else {
@@ -256,20 +266,20 @@ public class User {
 					case 0:
 						break;
 					default:
-						System.out.println(actionChoice+" Invalid input");
+						log.warn(actionChoice+" Invalid input");
 						break;
 						
 					}	
 					}while(actionChoice!=0);
 					}
 					catch(BusinessException e) {
-						System.out.println(e);
+						log.trace(e);
 					}
 					catch (NumberFormatException e) {
-						System.out.println(e);
+						log.error(e);
 					}
 					catch(InputMismatchException e) {
-						System.out.println("InputException");
+						log.error("InputException");
 						
 					}
 				}
@@ -286,13 +296,13 @@ public class User {
 			break;
 		
 		case(2):
-			System.out.println("What is your initial deposit?");
+			log.trace("What is your initial deposit?");
 			
 			try {
-				double input = scanner.nextDouble();
+				double input = Double.parseDouble(scanner.nextLine());
 				try {
 				bdbs.requestAccount(input,this.id);
-				System.out.println("Awaiting approval by employee");
+				log.trace("Awaiting approval by employee");
 				}
 				catch(BusinessException e){
 				
@@ -308,7 +318,7 @@ public class User {
 			break;
 		default:
 			
-			System.out.println("Invalid entry");
+			log.warn("Invalid entry");
 			break;
 		}
 		}while(c!=3);

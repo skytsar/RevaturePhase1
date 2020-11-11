@@ -93,6 +93,9 @@ private static Logger log=Logger.getLogger(HelloBank.class);
 					System.out.println(e);
 					
 				}
+				catch(NullPointerException e) {
+					log.error("Error: nullpointer");
+				}
 			break;
 			case 3:
 				break;

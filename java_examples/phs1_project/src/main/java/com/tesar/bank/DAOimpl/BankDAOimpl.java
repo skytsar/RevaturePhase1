@@ -48,14 +48,17 @@ public class BankDAOimpl implements BankDAO {
 			}
 			else
 			System.out.println("Invalid username or password");
+			log.trace("User retreived");
 		} catch (ClassNotFoundException e) {
+			log.error("ClassNotFound Error");
 			System.out.println(e);
 		} catch (SQLException e) {
+			log.error("SQL Error");
 			System.out.println(e);
 		}
 		finally {
 			try {
-			log.trace("User retreived");
+			
 			connection.close();
 			} catch (SQLException e) {
 				System.out.println(e);
@@ -85,19 +88,23 @@ public class BankDAOimpl implements BankDAO {
 			//preparedStatement.setString(6, "c");
 			preparedStatement.executeUpdate();
 			
+			log.trace("New user inserted");
 	} catch (ClassNotFoundException e) {
 		System.out.println(e);} 
 	catch (SQLException e) {
-		System.out.println(e);
+		log.error("Error: SQL");
+		throw new BusinessException("This username is already in use");
+		
+		//System.out.println(e);
 	}
 	finally {
 		try {
-		log.trace("New user inserted");
+		
 		connection.close();
 		
 			//System.out.println("Connection closed");
 		} catch (SQLException e) {
-			System.out.println(e);
+			throw new BusinessException("");
 		}
 	}
 	}

@@ -35,3 +35,146 @@
 [TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    10-11-2020
 [TRACE] com.tesar.bank.HelloBank: Logging out    10-11-2020
 [TRACE] com.tesar.bank.HelloBank: Exiting program    10-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New user inserted    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: New user inserted    11-11-2020
+[ERROR] com.tesar.bank.DAOimpl.BankDAOimpl: Error: SQL    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Transactions printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Customer list printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of pending accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account #2 requested a withdrawl    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account #2 requested a deposit    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account updated    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: User retreived    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Accounts printed    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: List of Customer's accounts retrieved    11-11-2020
+[TRACE] com.tesar.bank.DAOimpl.BankDAOimpl: Account retrieved    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Logging out    11-11-2020
+[TRACE] com.tesar.bank.HelloBank: Exiting program    11-11-2020

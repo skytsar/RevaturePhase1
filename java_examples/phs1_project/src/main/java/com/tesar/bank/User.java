@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import com.tesar.exception.BusinessException;
+import java.util.InputMismatchException;
 
 
 public class User {
@@ -46,7 +47,12 @@ public class User {
 		System.out.println("(2) view transactions");
 		System.out.println("(3) view all customers");
 		System.out.println("(4) Log out");
-		c = scanner.nextInt();
+		try {
+			c = Integer.parseInt(scanner.nextLine());
+		} catch (NumberFormatException e) {
+
+		}
+		//c = scanner.nextInt();
 		switch(c) {
 		case(1):
 			try {
@@ -61,6 +67,7 @@ public class User {
 			System.out.println(a.accountId+ "                   "+a.ownerId+ "                   "+ a.ammount);
 			System.out.println("Enter intended account ID (or enter 0 to cancel)");
 			int occuranceCount=0;
+			
 			pendingChoice=scanner.nextInt();
 			for(Account a:pendingList) {
 				if(a.getAccountId()==pendingChoice) {
@@ -143,7 +150,14 @@ public class User {
 		System.out.println("(1) View accounts you own");
 		System.out.println("(2) Create account");
 		System.out.println("(3) Log out");
-		c = scanner.nextInt();
+		
+			// = scanner.nextInt();
+		
+			try {
+				c = Integer.parseInt(scanner.nextLine());
+			} catch (NumberFormatException e) {
+
+			}
 		
 			
 		switch(c) {
@@ -162,11 +176,23 @@ public class User {
 				System.out.println(a.accountId+ "                       "+ a.ammount);
 				System.out.println("Enter intended account");
 				//try {
-					int accountChoice= scanner.nextInt();
-					account=bdbs.getAccountwithID(accountChoice);
-					if(account.ownerId!=this.id) {
-						throw new BusinessException("This is not your account");
-					}
+				
+					//try {
+					
+					try {
+						//System.out.println("In try block");
+						 int accountChoice= Integer.parseInt(scanner.nextLine());
+						 account=bdbs.getAccountwithID(accountChoice);
+						 if(account.ownerId!=this.id) {
+							 throw new BusinessException("This is not your account");
+						 }
+						 
+					//} catch (NumberFormatException e) {
+						//System.out.println(e);
+					//}
+					
+					
+					
 				
 			
 				
@@ -179,14 +205,22 @@ public class User {
 					System.out.println("(1) Withdraw");
 					System.out.println("(2) Deposit");
 					System.out.println("(3) Transfer to another account");
-					actionChoice=scanner.nextInt();
+					
+					//try {
+						//System.out.println("In try block");
+						 actionChoice= Integer.parseInt(scanner.nextLine());
+						 
+					//} catch (NumberFormatException e) {
+						//System.out.println(e);
+					//}/
 					double entry=0.0;
 					int accountEntry;
 					
 					switch(actionChoice) {
 					case 1:
 						System.out.println("Enter the ammount you want to withdraw");
-						entry =scanner.nextDouble();
+						entry=Double.parseDouble(scanner.nextLine());
+						//entry =scanner.nextDouble();
 						if(account.getAmmount()<entry || entry<0.0)
 							System.out.println("Invalid request");
 						else {
@@ -195,7 +229,8 @@ public class User {
 						break;
 					case 2:
 						System.out.println("Enter the ammount you want to deposit");
-						entry =scanner.nextDouble();
+						entry=Double.parseDouble(scanner.nextLine());
+						//entry =scanner.nextDouble();
 						
 						if(entry<0.0)
 							System.out.println("Invalid request");
@@ -221,11 +256,22 @@ public class User {
 					case 0:
 						break;
 					default:
-						System.out.println("Invalid input");
+						System.out.println(actionChoice+" Invalid input");
 						break;
 						
 					}	
 					}while(actionChoice!=0);
+					}
+					catch(BusinessException e) {
+						System.out.println(e);
+					}
+					catch (NumberFormatException e) {
+						System.out.println(e);
+					}
+					catch(InputMismatchException e) {
+						System.out.println("InputException");
+						
+					}
 				}
 				
 			}
@@ -241,15 +287,22 @@ public class User {
 		
 		case(2):
 			System.out.println("What is your initial deposit?");
-			double input = scanner.nextDouble();
-			Account a= new Account();
+			
 			try {
+				double input = scanner.nextDouble();
+				try {
 				bdbs.requestAccount(input,this.id);
 				System.out.println("Awaiting approval by employee");
+				}
+				catch(BusinessException e){
+				
+				}
 			}
-			catch(BusinessException e){
+			catch(NumberFormatException e) {
 				
 			}
+			Account a= new Account();
+			
 			break;
 		case (3):
 			break;

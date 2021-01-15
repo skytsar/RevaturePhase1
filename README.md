@@ -27,4 +27,4 @@ This is a console focused app that's intended to be a fuctional system for banki
   * Right-click -> run as -> java application
 
 ## Usage
-The console will request inputs strings to be used to determine the user's decisions.
+The console will request inputs strings to be used to determine the user's decisions. The user will be prompted to input numbers as numerical commands with the program telling them what will happen with the commands are entered. Invalid commands will be rejected and only valid commands accepted.
